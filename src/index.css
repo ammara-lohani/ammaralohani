@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --pill-bg: #f1f5f9;
+  --pill-text: #334155;
+  --header-bg: rgba(255, 255, 255, 0.85);
+}
+
+.dark {
+  --bg-color: #0a0a0a;
+  --text-color: #f8fafc;
+  --text-muted: #a1a1aa;
+  --border-color: #262626;
+  --card-bg: #0d0d0d;
+  --card-border: #262626;
+  --pill-bg: #171717;
+  --pill-text: #d4d4d8;
+  --header-bg: rgba(10, 10, 10, 0.85);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-bg {
+  background-color: var(--bg-color);
+}
+
+.theme-text {
+  color: var(--text-color);
+}
+
+.theme-muted {
+  color: var(--text-muted);
+}
+
+.theme-border {
+  border-color: var(--border-color);
+}
+
+.theme-card {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+.theme-pill {
+  background-color: var(--pill-bg);
+  color: var(--pill-text);
+  border-color: var(--border-color);
+}
+
+.theme-header {
+  background-color: var(--header-bg);
+  border-color: var(--border-color);
+}
+
+.writing-font {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
